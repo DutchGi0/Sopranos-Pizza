@@ -1,0 +1,30 @@
+:root {
+  /* colors */
+  --primary-color: #fc3a3a;
+  --secondary-color: #feb123;
+}
+
+.secondary {
+  position: relative;
+  border-top: 3px solid var(--secondary-color);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.menu {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid var(--secondary-color);
+}
+
+.reviews {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid var(--secondary-color);
+}
