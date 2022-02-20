@@ -13,7 +13,9 @@
     </div>
     <hr class="secondary">
     <div class="container-fluid">
-        <div class="main"></div>
+        <div class="main">
+            <!-- <p>Moet background hebben</p> -->
+        </div>
 
         <div class="row">
             <div class="col-sm-8 menu">Menu</div>
