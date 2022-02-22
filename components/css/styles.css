@@ -1,0 +1,75 @@
+:root {
+  /* colors */
+  --primary-color: #fc3a3a;
+  --secondary-color: #feb123;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.secondary {
+  border-top: 3px solid var(--secondary-color);
+}
+
+.title {
+  text-align: center;
+  color: var(--primary-color);
+  -webkit-text-stroke: 0.075em var(--secondary-color);
+}
+
+.menu {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.menu-title {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 0.05em var(--secondary-color);
+}
+
+.reviews {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+  margin-right: 1em;
+}
+
+.reviews-title {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 0.05em var(--secondary-color);
+}
+
+.acties {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+}
+
+.acties-title {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 0.05em var(--secondary-color);
+}
+
+.btn-acties {
+  background-color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 0.6em;
+  font-weight: bold;
+}
+
+.main-text {
+  margin: 0 auto;
+  overflow: hidden;
+}
