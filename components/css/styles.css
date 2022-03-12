@@ -1,0 +1,282 @@
+:root {
+  /* colors */
+  --primary-color: #fc3a3a;
+  --secondary-color: #feb123;
+  --text-color: #333;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 5em;
+  height: 50%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.secondary {
+  border-top: 3px solid var(--secondary-color);
+}
+
+.title {
+  text-align: center;
+  color: var(--primary-color);
+  -webkit-text-stroke: 0.075em var(--secondary-color);
+  line-height: 1;
+}
+
+.menu-title,
+.acties-title,
+.winkelmandje-title {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 0.05em var(--secondary-color);
+  line-height: 1;
+  padding: 0.25em;
+}
+
+.reviews {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+  margin-right: 1em;
+}
+
+.acties {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+}
+
+.home-acties {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+  /* border-bottom: none; */
+  margin-bottom: 1em;
+}
+
+.home-reviews {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.btn-acties,
+.btn-review,
+.btn-winkelmandje {
+  background-color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 0.6em;
+  font-weight: bold;
+  margin: 1.5em;
+  padding: 1em;
+  line-height: 1;
+}
+
+.btn-acties:hover,
+.btn-review:hover,
+.btn-winkelmandje:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1, 1.1);
+  color: white;
+}
+
+/* Menu */
+
+.menu {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+
+.menu-acties,
+.winkelmandje {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+  margin-left: 1.75em;
+  margin-bottom: 0.75em;
+}
+
+.winkelmandje {
+  margin-left: 3em;
+}
+
+.small-menu-container {
+  border: 2px solid var(--secondary-color);
+  background-color: white;
+  margin-bottom: 0.75em;
+}
+
+.menu-title {
+  padding: 0.35em;
+}
+
+.small-menu-items {
+  border: 2px solid var(--secondary-color);
+  border-bottom: none;
+}
+
+.small-menu-items:nth-child(2) {
+  border-right: none;
+}
+
+.small-menu-items:last-child {
+  border-left: none;
+}
+
+.text-items {
+  padding: 0.5em;
+}
+
+.text-items,
+.main-text {
+  color: var(--text-color);
+}
+
+.menu-container,
+.review-container {
+  border: 2px solid var(--secondary-color);
+  background-color: white;
+  margin-bottom: 0.75em;
+}
+
+.menu-items,
+.review-items {
+  border: 2px solid var(--secondary-color);
+}
+
+.item-spacing {
+  margin: 1.25em;
+}
+
+.menu-items:nth-child(1) {
+  border-right: none;
+}
+.menu-items:last-child {
+  border-left: none;
+}
+/* Contact */
+
+.contact {
+  padding: 0.75em;
+  border: 2px solid var(--secondary-color);
+  background-color: white;
+  margin-top: 0.75em;
+}
+.contact-info {
+  padding: 0.75em;
+  border: 2px solid var(--secondary-color);
+  background-color: white;
+}
+.contact-form-info {
+  margin-top: 2.5em;
+}
+.contact-col-md-9 {
+  background: #fff;
+}
+.contact-form label {
+  font-weight: 600;
+  margin: 0.25em;
+  color: var(--text-color);
+}
+.contact-form button {
+  background: var(--primary-color);
+  color: var(--text-color);
+  font-weight: 600;
+  margin-top: 0.45em;
+}
+.contact-form button:focus {
+  box-shadow: none;
+}
+
+.contact-bold {
+  font-weight: bold;
+}
+
+#map {
+  height: 250px;
+  width: 100%;
+}
+
+/* Reviews */
+
+.item-spacing {
+  margin: 1.25em;
+  padding: 0.75em;
+}
+
+.review-items:nth-child(1) {
+  border-right: none;
+}
+
+.review-items:last-child {
+  border-left: none;
+}
+
+.reviews-title {
+  color: var(--primary-color);
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 0.05em var(--secondary-color);
+  line-height: 1;
+  padding: 0.25em;
+}
+
+.review-container {
+  margin: 0.75em;
+}
+
+.form-review {
+  margin-top: 0.75em;
+}
+
+.form-check-label {
+  margin-left: 0;
+}
+
+/* Account */
+
+.account-container {
+  border: 2px solid var(--secondary-color);
+  padding: 0.5em;
+  margin: 2em;
+}
+
+.account-bold {
+  font-weight: bold;
+}
+
+/* ACP */
+
+.acp-container {
+  border: 2px solid var(--secondary-color);
+  padding: 0.5em;
+  margin: 2em;
+}
+
+.acp-items-container,
+.acp-items-container-acties {
+  border: 1px solid var(--secondary-color);
+  margin: 0.3em;
+  padding: 0.25em;
+}
+
+.acp-edit-pizza,
+.acp-add-pizza,
+.acp-add-acties,
+.acp-edit-acties {
+  display: flex;
+  justify-content: center;
+}
+
+.acp-items-container-acties {
+  margin-top: 5em;
+}
