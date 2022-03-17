@@ -8,9 +8,9 @@
         <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">  
         <link rel="stylesheet" href="components\css\styles.css"/>
         <style>
-        .navbar {background-color: #FC3A3A; border-bottom: 2px solid #FEB123;}
+        .navbar {background: rgb(254,177,35); background: linear-gradient(90deg, rgba(254,177,35,1) 0%, rgba(252,58,58,1) 100%);; border-bottom: 2px solid #FEB123;}
         .link {color: white; cursor: pointer;}
-        .active {color: #feb123}
+        .active {color: #333}
         .mx-5 {
             padding-left:  50px !important;
             padding-right: 50px !important;

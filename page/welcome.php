@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($_SESSION['user'])) {
-    header('Location: login.php');
+    header('location: index.php?page=login');
 } ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -12,7 +12,7 @@ $data = [
 ];
 
 $query =
-    'INSERT INTO acties (name, description, datetime) VALUES (:name, :description, :datetime)';
+    'INSERT INTO pizza (name, description, price, img, size) VALUES (:name, :description, :price, :img, :size)';
 
 $stmt = $db->prepare($query);
 

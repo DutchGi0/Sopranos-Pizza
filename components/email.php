@@ -11,7 +11,7 @@ if (isset($_POST['sumbit'])) {
             $subject = $_POST['subject'];
             $message = $_POST['message'];
 
-            $to = 'giovannixrsx@gmail.com';
+            $to = 'joedone@email.com';
             $body = '';
 
             $body .= 'Van: ' . $name . "\r\n";

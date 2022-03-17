@@ -1,3 +1,7 @@
+<?php
+$review = $db->prepare('SELECT * FROM reviews');
+$review->execute();
+?>
 
 <!DOCTYPE html>
 <html lang="EN">
@@ -13,61 +17,23 @@
     <div class="container">
         <div class="row">
             <div class="main-text col review-container">
-                <div class="row item-spacing">
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                </div>
-                 <div class="row item-spacing">
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                </div>
-                 <div class="row item-spacing">
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                </div>
-                 <div class="row item-spacing">
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                </div>
-                 <div class="row item-spacing">
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                    <div class="review-items col">
-                        <p class="main-text">Review 1</p>
-                    </div> 
-                </div>
+                <table class="table ">
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Commentaar</th>
+                </tr>
+            </thead>
+            <tbody>     
+                
+                <?php while ($row = $review->fetch(PDO::FETCH_ASSOC)): ?>
+                <tr>
+                <td colspan="1"><?php echo $row['name']; ?></td>
+                <td colspan="2"><?php echo $row['comment']; ?></td>
+                </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
             </div>
 
                 <div class="col-sm-2 review-container justify-content-end">

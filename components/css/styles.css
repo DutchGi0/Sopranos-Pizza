@@ -55,8 +55,11 @@ html {
 .home-acties {
   background-color: white;
   border: 2px solid var(--secondary-color);
-  /* border-bottom: none; */
   margin-bottom: 1em;
+  overflow-y: auto;
+  height: 25em;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .home-reviews {
@@ -64,6 +67,15 @@ html {
   border: 2px solid var(--secondary-color);
   margin-right: 1em;
   margin-bottom: 1em;
+  overflow-y: auto;
+  height: 25em;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.home-acties::-webkit-scrollbar,
+.home-reviews::-webkit-scrollbar {
+  display: none;
 }
 
 .btn-acties,
@@ -169,6 +181,7 @@ html {
   border: 2px solid var(--secondary-color);
   background-color: white;
   margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 .contact-info {
   padding: 0.75em;
@@ -279,4 +292,26 @@ html {
 
 .acp-items-container-acties {
   margin-top: 5em;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #fd772f #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fd772f;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
 }

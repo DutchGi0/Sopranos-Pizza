@@ -12,4 +12,5 @@ if ($page) {
     include 'page/' . $page . '.php';
 }
 require_once 'footer.php';
+
 ?>

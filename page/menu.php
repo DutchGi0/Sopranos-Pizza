@@ -1,3 +1,8 @@
+<?php
+$actions = $db->prepare('SELECT * FROM acties');
+$actions->execute();
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -86,10 +91,10 @@
                         Acties
                     </div> 
                     <div class="acties-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, nostrum deserunt hic expedita corrupti incidunt explicabo at dicta placeat corporis illum dolore natus esse quod, tempore odio dolor ipsa aut atque! Sapiente illum officiis, modi mollitia deserunt corrupti tempora, eos molestiae neque nulla labore cupiditate.
-                        <!-- <a href="index.php?page=menu">
-                            <input type="button" value="Bestel online" class="btn-acties"/>
-                        </a> -->
+                        <?php while ($row = $actions->fetch(PDO::FETCH_ASSOC)):
+                            echo '<h5>' . $row['name'] . '</h5>';
+                            echo $row['description'];
+                        endwhile; ?>
                     </div>
                 </div>
                  <div class="col-md-2 winkelmandje">
